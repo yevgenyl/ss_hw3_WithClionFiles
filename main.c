@@ -2,60 +2,38 @@
 #include "textSearch.h"
 
 int main() {
-    //Check getLine
     /*
-    char s[250] = "";
-    printf("%d", getLine(s));
-    printf(" %s", s);
-    */
-
-    //Check getWord
+     * Main for the second Exercise
+     */
+    char word[WORD] = {};
+    int option = 'a';
+    getWord(word);
+    option = getchar();
+    switch(option){
+        case 'a':
+            print_lines(word);
+            break;
+        case 'b':
+            print_similar_words(word);
+            break;
+        default:
+            break;
+    }
     /*
-    char s[250] = "";
-    printf(" %d", getWord(s));
-    printf(" %s", s);
+     * Main for the first Exercise
+     */
+    /*
+    int n = -1;
+    int arr[SIZE] = {};
+    int i = 0;
+    while((scanf(" %d", &n)) != EOF && i < SIZE){
+        *(arr+i) = n;
+        i++;
+    }
+    insertion_sort(arr,SIZE);
+    for(int j = 0; j < SIZE; j++){
+        printf("%d, ",*(arr+j));
+    }
+     */
     return 0;
-     */
-
-    //Check substring
-    /*
-    char s[] = "Hello Word From Mercaz Tseirim!";
-    char s2[] = "Froms";
-    printf("%d",substring(s,s2));
-     */
-
-    //Check print_lines
-    /*
-    char word[] = "cat";
-    print_lines(word);
-     */
-
-    //Check similar
-    /*
-    char s1[] = "Hellof";
-    char s2[] = "eo";
-    char s3[] = "o";
-    similar(s1,s2,1);
-    printf("%d",substring(s1,s2));
-    printf("%d",substring(s1,s3));
-     */
-
-    //Check removeChars
-    /*
-    char s1[30] = "Hello";
-    char s2[30] = "";
-    removeChars(s1,5,5,s2);
-    printf("%s",s2);
-    */
-
-    //Check similar
-    /*
-    char s1[] = "Hello";
-    char s2[] = "Hello";
-    printf("%d",similar(s1,s2));
-     */
-
-    //Check print_similar_words
-    char s1[] = "cat";
-    print_similar_words(s1);
 }

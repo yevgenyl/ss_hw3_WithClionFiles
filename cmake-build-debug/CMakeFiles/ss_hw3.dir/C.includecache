@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/yevgenylashtchionov/CLionProjects/ss_hw3/textSearch.c
+/home/user/C_Projects/ss_hw3_WithClionFiles/main.c
 stdio.h
 -
-string.h
--
+textSearch.h
+/home/user/C_Projects/ss_hw3_WithClionFiles/textSearch.h
+
+/home/user/C_Projects/ss_hw3_WithClionFiles/textSearch.h
 

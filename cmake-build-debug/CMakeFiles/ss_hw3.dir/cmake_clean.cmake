@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ss_hw3.dir/insertionSort.c.o"
   "CMakeFiles/ss_hw3.dir/main.c.o"
   "CMakeFiles/ss_hw3.dir/textSearch.c.o"
   "ss_hw3"

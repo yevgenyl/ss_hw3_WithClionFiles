@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ss_hw3.dir/main.c.o CMakeFiles/ss_hw3.dir/textSearch.c.o  -o ss_hw3 
+/usr/bin/cc -g   CMakeFiles/ss_hw3.dir/main.c.o CMakeFiles/ss_hw3.dir/textSearch.c.o CMakeFiles/ss_hw3.dir/insertionSort.c.o  -o ss_hw3 

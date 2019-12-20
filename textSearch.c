@@ -4,10 +4,10 @@
 
 #include <stdio.h>
 #include <string.h>
+#include "textSearch.h"
 
 #define LINE 256
 #define  LINES 1000
-#define WORD 30
 
 int getLine(char s[]) {
     int c, j = 0;
@@ -100,6 +100,7 @@ void removeChars(char *s, int i, int len, char *newStr) {
         p2++;
         p1++;
     }
+    *p2 = '\0';
 }
 
 int similar(char *s, char *t) {
@@ -124,7 +125,7 @@ int similar(char *s, char *t) {
     if (lenS >= lenT) { // If length of s is greater.
         while (j <= lenT) {
             int index = j;
-            char temp[] = "";
+            char temp[WORD] = "";
             removeChars(s, index, lenS, temp); //need to check all options by removing chars.
             if (substring(t, temp))
                 return 1;
